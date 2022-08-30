@@ -10,10 +10,9 @@ namespace mulator::mem
 
         for (size_t i = 0; i < entries.size(); i++)
         {
-            result += "Name:  " + entries[i]->getName() + "\n";
+            result += "---- " + entries[i]->getName() + " ----\n";
             result += "Start: " + std::to_string(entries[i]->getStart()) + "\n";
             result += "End:   " + std::to_string(entries[i]->getEnd()) + "\n";
-            result += "--------------------\n";
         }
 
         return result;
